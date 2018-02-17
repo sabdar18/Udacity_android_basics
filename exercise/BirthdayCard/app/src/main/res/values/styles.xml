@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyTextViewStyle" parent="AppTheme">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/dimen_16</item>
+        <item name="android:textSize">36sp</item>
+    </style>
 </resources>
