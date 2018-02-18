@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Hello Android</string>
+    <string name="google_udacity_nanodegree">Google Udacity Nanodegree</string>
+    <string name="udacity_title">Udacity</string>
+    <string name="udacity_address">2465 Latham St \nMountain View, CA 94043</string>
+    <string name="udacity_phone">650-555-5555</string>
+    <string name="description">Become an Android Developer.Earn a NanoDegree from Google </string>
+    <string name="udacity_website">www.udacity.com</string>
 </resources>

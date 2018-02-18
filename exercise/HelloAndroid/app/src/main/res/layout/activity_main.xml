@@ -1,15 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.sabdar.android.helloandroid.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-         />
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/google_udacity_nanodegree"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/udacity_google_nanodegree" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageView"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_16">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/MyTextViewStyle.Heading"
+                android:text="@string/udacity_title"
+                android:textAllCaps="true" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/MyTextViewStyle.Description"
+                android:drawableLeft="@drawable/address"
+                android:text="@string/udacity_address" />
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/MyTextViewStyle.Description"
+                android:drawableLeft="@drawable/phone"
+                android:text="@string/udacity_phone" />
+
+            <TextView
+                android:id="@+id/website"
+                style="@style/MyTextViewStyle.Description"
+                android:drawableLeft="@drawable/website"
+                android:text="@string/udacity_website" />
+
+            <TextView
+                android:id="@+id/description"
+                style="@style/MyTextViewStyle.Description1"
+                android:text="@string/description" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
