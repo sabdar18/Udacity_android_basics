@@ -125,15 +125,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String scorePointsText(int pointsText, int score) {
-        Resources resources = getResources();
-        String.format(resources.getString(pointsText),score);
         String scoreText = String.valueOf(score) ;
         if(score == 1){
             scoreText += "Point";
         }else{
             scoreText += "Points";
         }
-        return scoreText;
+        return getString(pointsText,scoreText);
     }
 
 }
