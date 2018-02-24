@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     /**
      * Constants
      */
@@ -20,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
     int scoreTeamB =0;
     private TextView mScoreViewTeamA;
     private TextView mScoreViewTeamB;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,14 +27,12 @@ public class MainActivity extends AppCompatActivity {
         mScoreViewTeamA = findViewById(R.id.team_a_score);
         mScoreViewTeamB = findViewById(R.id.team_b_score);
     }
-
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(SCORE_TEAM_A,scoreTeamA);
         outState.putInt(SCORE_TEAM_B, scoreTeamB);
     }
-
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -45,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Increase the score for Team A by 1 point.
      */
@@ -53,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA += 1;
         displayForTeamA(scoreTeamA);
     }
-
     /**
      * Increase the score for Team A by 2 points.
      */
@@ -61,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA += 2;
         displayForTeamA(scoreTeamA);
     }
-
     /**
      * Increase the score for Team A by 3 points.
      */
@@ -69,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA += 3;
         displayForTeamA(scoreTeamA);
     }
-
     /**
      * Displays the given score for Team A.
      */
@@ -78,9 +70,6 @@ public class MainActivity extends AppCompatActivity {
         mScoreViewTeamA.setContentDescription(scorePointsText(R.string.team_a_score_desc,score));
 
     }
-
-
-
     /**
      * Increase the score for Team B by 1 point.
      */
@@ -88,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB+= 1;
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Increase the score for Team B by 2 points.
      */
@@ -96,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB += 2;
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Increase the score for Team B by 3 points.
      */
@@ -104,7 +91,6 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB += 3;
         displayForTeamB(scoreTeamB);
     }
-
     /**
      * Displays the given score for Team B.
      */
@@ -112,18 +98,15 @@ public class MainActivity extends AppCompatActivity {
         mScoreViewTeamB.setText(String.valueOf(score));
         mScoreViewTeamA.setContentDescription(scorePointsText(R.string.team_b_score_desc,score));
     }
-
     /**
      * reset scoreTeamA, scoreTeamB and display to zero
      */
-
     public void resetScore(View v){
         scoreTeamA =0;
         scoreTeamB =0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
     }
-
     private String scorePointsText(int pointsText, int score) {
         String scoreText = String.valueOf(score) ;
         if(score == 1){
@@ -133,5 +116,4 @@ public class MainActivity extends AppCompatActivity {
         }
         return getString(pointsText,scoreText);
     }
-
 }
