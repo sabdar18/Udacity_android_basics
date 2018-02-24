@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.sabdar.android.scorekeeper.MainActivity">
 
-    <ScrollView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/score_board"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dimen_16dp"
             android:orientation="horizontal">
 
@@ -35,26 +36,6 @@
                     android:contentDescription="@string/team_a_score_desc"
                     android:text="@string/team_a_score" />
 
-                <Button
-                    android:id="@+id/team_a_three_points"
-                    style="@style/MyButtonView"
-                    android:contentDescription="@string/team_a_3_points_button_desc"
-                    android:onClick="addThreeForTeamA"
-                    android:text="@string/three_points_text" />
-
-                <Button
-                    android:id="@+id/team_a_two_points"
-                    style="@style/MyButtonView"
-                    android:contentDescription="@string/team_a_2_points_button_desc"
-                    android:onClick="addTwoForTeamA"
-                    android:text="@string/two_points_text" />
-
-                <Button
-                    android:id="@+id/team_a_one_point"
-                    style="@style/MyButtonView"
-                    android:contentDescription="@string/team_a_1_point_button_desc"
-                    android:onClick="addOneForTeamA"
-                    android:text="@string/free_throw_text" />
 
             </LinearLayout>
 
@@ -82,6 +63,75 @@
                     android:contentDescription="@string/team_b_score_desc"
                     android:text="@string/team_b_score" />
 
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/score_board"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/team_a_three_points"
+                    style="@style/MyButtonView"
+                    android:contentDescription="@string/team_a_3_points_button_desc"
+                    android:onClick="addThreeForTeamA"
+                    android:text="@string/three_points_text" />
+
+                <Button
+                    android:id="@+id/team_a_two_points"
+                    style="@style/MyButtonView"
+                    android:contentDescription="@string/team_a_2_points_button_desc"
+                    android:onClick="addTwoForTeamA"
+                    android:text="@string/two_points_text" />
+
+                <Button
+                    android:id="@+id/team_a_one_point"
+                    style="@style/MyButtonView"
+                    android:contentDescription="@string/team_a_1_point_button_desc"
+                    android:onClick="addOneForTeamA"
+                    android:text="@string/free_throw_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/reset_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/reset_score"
+                    android:onClick="resetScore"
+                    android:text="@string/reset_button_title"
+                    android:textColor="@color/colorWhite" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
                 <Button
                     android:id="@+id/team_b_three_points"
                     style="@style/MyButtonView"
@@ -106,18 +156,9 @@
             </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
 
-    <Button
-        android:id="@+id/reset_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/reset_score"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="@dimen/dimen_32dp"
-        android:onClick="resetScore"
-        android:text="@string/reset_button_title"
-        android:textColor="@color/colorWhite" />
 
-</RelativeLayout>
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -6,6 +6,34 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <!--<item name="textColorSecondary">@color/colorWhite</item>-->
+    </style>
+
+    <style name="MyTextView" parent="AppTheme">
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textColor">@color/textViewColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dimen_4dp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="MyTextView.Score" parent="MyTextView">
+        <item name="android:textSize">@dimen/dimen_56sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="MyButtonView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_24dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_24dp</item>
     </style>
 
 </resources>

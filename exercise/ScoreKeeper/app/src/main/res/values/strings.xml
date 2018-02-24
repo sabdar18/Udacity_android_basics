@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="team_a_title" >Team A</string>
+    <string name="three_points_text" >+3 Points</string>
+    <string name="two_points_text">+2 Points</string>
+    <string name="free_throw_text">Free Throw</string>
+    <string name="team_a_score">0</string>
+    <string name="team_b_title">Team B</string>
+    <string name="team_b_score" >0</string>
+    <string name="reset_button_title">Reset</string>
+    <string name="team_a_score_desc">Team A Score %1$s</string>
+    <string name="team_b_score_desc">Team b Score %1$s </string>
+    <string name="team_a_3_points_button_desc">Give Team A 3 Points</string>
+    <string name="team_a_2_points_button_desc">Give Team A 2 Points</string>
+    <string name="team_a_1_point_button_desc">Give Team A 1 Point</string>
+    <string name="team_b_3_points_button_desc">Give Team B 3 Points</string>
+    <string name="team_b_2_points_button_desc">Give Team B 2 Points</string>
+    <string name="team_b_1_point_button_desc">Give Team B 1 Point</string>
+    <string name="reset_score">Reset Scores of Team A and Team B</string>
 </resources>
