@@ -3,13 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#B388FF"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.example.android.cookies.MainActivity">
 
+    <ImageView
+        android:id="@+id/android_cookie_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/before_cookie"
+        android:text="@string/hello_world" />
+
     <TextView
+        android:id="@+id/status_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/status_hungry_message"
+        android:textColor="@android:color/white"
+        android:textSize="34sp" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-      />
+        android:layout_margin="16dp"
+        android:text="@string/eat_cookie_button_text"
+        android:onClick="eatCookie" />
 
 </LinearLayout>

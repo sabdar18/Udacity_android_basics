@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Cookies</string>
+    <string name="hello_world">Hello World</string>
+    <string name="status_full_message">I\'m so Full</string>
+    <string name="status_hungry_message">I\'m so hungry</string>
+    <string name="eat_cookie_button_text">Eat cookie</string>
 </resources>
