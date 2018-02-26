@@ -8,9 +8,34 @@
     tools:context="com.example.android.menu.MainActivity">
 
     <TextView
+        android:id="@+id/menu_item_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-      />
+        android:text="@string/log_1"
+        android:textAppearance="?android:textAppearanceMedium" />
 
+    <TextView
+        android:id="@+id/menu_item_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/log_2"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/menu_item_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/log_3"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="printToLogs"
+        android:text="@string/print_menu_to_logs" />
 </LinearLayout>

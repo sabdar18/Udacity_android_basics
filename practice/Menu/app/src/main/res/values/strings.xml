@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Menu</string>
+    <string name="print_menu_to_logs">Print menu to logs</string>
+    <string name="log_3">Chocolate lava cake</string>
+    <string name="log_2">Blueberry pie</string>
+    <string name="log_1">Mango sorbet</string>
 </resources>
