@@ -1,12 +1,24 @@
 <resources>
     <string name="app_name">Just Java</string>
     <string name="quantity_label">Quantity</string>
-    <string name="quantity">0</string>
+    <string name="quantity" translatable="false">0</string>
     <string name="button_label">Order</string>
-    <string name="order_submit">Submit Your Order</string>
+    <string name="order_submit" translatable="false">Submit Your Order</string>
     <string name="price_label">Price</string>
-    <string name="price">0</string>
-    <string name="plus">+</string>
-    <string name="minus">-</string>
+    <string name="price" translatable="false">0</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="minus" translatable="false">-</string>
     <string name="order_summary_label">Order Summary</string>
+    <string name="toppings_text">Toppings</string>
+    <string name="whipped_cream">Whipped Cream</string>
+    <string name="chocolate">Chocolate</string>
+    <string name="user_name_hint">Name</string>
+    <string name="email_subject">COFFEE ORDERING  SUMMARY</string>
+    <string name="order_name">Name :</string>
+    <string name="order_whipped_cream">\nAdd Whipped Cream?</string>
+    <string name="order_chocolate">\nAdd Chocolate?</string>
+    <string name="order_quantity">\nQuantity :</string>
+    <string name="order_total">\nTotal: $</string>
+    <string name="order_thank">\nThank You!</string>
+    <string name="no_app_error">No Email App</string>
 </resources>

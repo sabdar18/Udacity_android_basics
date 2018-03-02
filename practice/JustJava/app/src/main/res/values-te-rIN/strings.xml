@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="quantity_label">పరిమాణం</string>
+    <string name="button_label">ఆర్డర్</string>
+    <string name="whipped_cream">తన్నాడు క్రీమ్</string>
+    <string name="toppings_text">టాపింగ్స్</string>
+    <string name="chocolate">చాక్లెట్</string>
+    <string name="user_name_hint">పేరు</string>
+    <string name="email_subject">కాఫీ ఆర్డర్ సారాంశం</string>
+</resources>

@@ -9,10 +9,15 @@
 package com.example.android.justjava;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * This app displays an order form to order coffee.
@@ -24,23 +29,35 @@ public class MainActivity extends AppCompatActivity {
      */
     private int quantity = 0;
     private int cost = 5;
+    private TextView orderSummaryTextView;
+    private CheckBox whippedCreamCheckBox;
+    private CheckBox chocolateCheckBox;
+    private boolean hasWhippedCream = false;
+    private boolean hasChocolate = false;
+    private TextView quantityTextView;
+    private EditText userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+//        orderSummaryTextView = findViewById(R.id.order_summary_text_view);
+        whippedCreamCheckBox = findViewById(R.id.whipped_cream_check_box);
+        chocolateCheckBox = findViewById(R.id.chocolate_check_box);
+        userName = findViewById(R.id.user_name);
     }
 
     /**
      * This method displays the given quantity value on the screen.
      */
     private void displayQuantity(int number) {
-        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
-        quantityTextView.setText("" + number);
+        quantityTextView.setText(String.valueOf(number));
     }
+
     /**
      * This method to increase Quantity
+     *
      * @param view
      */
     public void increment(View view) {
@@ -61,10 +78,9 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method displays the given text on the screen.
      */
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView =  findViewById(R.id.order_summary_text_view);
-        orderSummaryTextView.setText(message);
-    }
+//    private void displayMessage(String message) {
+//        orderSummaryTextView.setText(message);
+//    }
 
     /**
      * This method is called when the order button is clicked.
@@ -72,7 +88,26 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view) {
         int price = calculatePrice();
         String message = createOrderSummary(price);
-        displayMessage(message);
+//        displayMessage(message);
+        sendMessage(message);
+    }
+
+    /**
+     * Send Order Summary  in Email
+     * @param message
+     */
+    private void sendMessage(String message) {
+        String[] addresses =  new String[]{"hello@gmail.com","test@gmail.com"};
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_EMAIL, addresses);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email_subject));
+        intent.putExtra(Intent.EXTRA_TEXT, message);
+        if(intent.resolveActivity(getPackageManager()) != null){
+            startActivity(intent);
+        }else{
+            Toast.makeText(this, R.string.no_app_error, Toast.LENGTH_SHORT).show();
+        }
     }
 
     /**
@@ -80,7 +115,14 @@ public class MainActivity extends AppCompatActivity {
      * @return total price
      */
     private int calculatePrice() {
-        return  quantity * cost;
+        int price  = cost;
+        if(hasWhippedCream){
+            price +=1;
+        }
+        if(hasChocolate){
+            price +=2;
+        }
+        return quantity * price;
     }
 
     /**
@@ -89,10 +131,33 @@ public class MainActivity extends AppCompatActivity {
      * @return summary
      */
     private String createOrderSummary(int price) {
-        String message = "Name : Sabdar Shaik";
-        message += "\nQuantity :"+ quantity;
-        message += "\nTotal: $ " + price;
-        message += "\nThank You!";
+        String message = getString(R.string.order_name) + userName.getText().toString();
+        message += getString(R.string.order_whipped_cream) + hasWhippedCream;
+        message += getString(R.string.order_chocolate) + hasChocolate;
+        message += getString(R.string.order_quantity) + quantity;
+        message += getString(R.string.order_total) + price;
+        message += getString(R.string.order_thank);
         return message;
     }
+
+    /**
+     * To check Whipped Cream CheckBox and Chocolate CheckBox
+     * and update the values of haswWhippedCream, hasChocolate
+     * @param view
+     */
+
+    public void onCheckBoxClicked(View view) {
+        int checkBoxId = view.getId();
+        switch (checkBoxId) {
+            case R.id.whipped_cream_check_box:
+                hasWhippedCream = whippedCreamCheckBox.isChecked();
+                break;
+            case R.id.chocolate_check_box:
+                hasChocolate = chocolateCheckBox.isChecked();
+                break;
+            default:
+                break;
+        }
+    }
+
 }
