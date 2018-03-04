@@ -1,7 +1,7 @@
 
 
 
-#Quiz App Project
+<h1>Quiz App Project</h1>
 
 <img src="https://github.com/sabdar18/Udacity_android_basics/blob/master/exercise/QuizApp/screenshots/quiz.gif" width="300"  />
 <br>
