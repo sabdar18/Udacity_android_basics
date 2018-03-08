@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Intenational Women\'s Day</string>
+    <string name="women_day_desc">Women Day Image</string>
+    <string name="women_days">International Women\'s Day Wishes</string>
+    <string name="language">Language</string>
+    <string-array name="womens_day_wishes">
+        <item>International Womens Day Wishes</item>
+        <item>అంతర్జాతీయ మహిళా దినోత్సవం శుభాకాంక్షలు</item>
+        <item>अंतर्राष्ट्रीय महिला दिवस की शुभकामनाएं</item>
+        <item>சர்வதேச மகளிர் தினம் வாழ்த்துக்கள்</item>
+        <item>आंतरराष्ट्रीय महिला दिन शुभेच्छा</item>
+        <item>আন্তর্জাতিক নারী দিবস শুভেচ্ছা</item>
+        <item>આંતરરાષ્ટ્રીય મહિલા દિવસ શુભેચ્છાઓ</item>
+        <item>ಅಂತರರಾಷ್ಟ್ರೀಯ ಮಹಿಳಾ ದಿನಾಚರಣೆ ಶುಭಾಶಯಗಳು</item>
+        <item>അന്താരാഷ്ട്ര വനിതാ ദിന ആശംസകൾ</item>
+        <item>ਅੰਤਰਰਾਸ਼ਟਰੀ ਮਹਿਲਾ ਦਿਵਸ ਦੀ ਇੱਛਾ ਹੈ</item>
+        <item>بين الاقوامي عورت جو ڏينهن گهربل</item>
+        <item>بین الاقوامی خاتون دن خواہشات</item>
+        <item>يوم المرأة العالمي التمنيات</item>
+
+    </string-array>
+
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Telugu</item>
+        <item>Hindi</item>
+        <item>Tamil</item>
+        <item>Marathi</item>
+        <item>Bengali</item>
+        <item>Gujarati</item>
+        <item>Kannada</item>
+        <item>Malayalam</item>
+        <item>Punjabi</item>
+        <item>Sindhi</item>
+        <item>Urdu</item>
+        <item>Arabic</item>
+    </string-array>
+</resources>
