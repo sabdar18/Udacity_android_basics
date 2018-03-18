@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sabdar.android.copychallenge.MainActivity">
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="100"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/new_group"
+        android:orderInCategory="100"
+        android:title="New group" />
+    <item
+        android:id="@+id/new_broadcast"
+        android:orderInCategory="100"
+        android:title="New broadcast" />
+    <item
+        android:id="@+id/whatsapp_web"
+        android:orderInCategory="100"
+        android:title="WhatsApp Web" />
+    <item
+        android:id="@+id/starred_messages"
+        android:orderInCategory="100"
+        android:title="Starred messages" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="101"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>
