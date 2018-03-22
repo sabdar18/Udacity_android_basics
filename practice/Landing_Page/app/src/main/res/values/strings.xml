@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Landing Page</string>
+    <string name="udacity_mobile">Udacity for Mobile</string>
+    <string name="free_courses_string">Free courses from leading experts.</string>
+    <string name="app_store_desc">Now available on App Store and Google Play&#8482;.</string>
+    <string name="ios">\u0020IOS</string>
+    <string name="android">\u0020ANDROID</string>
+    <string name="udacity_mobile_desc">Udacity Mobile App Images</string>
 </resources>
