@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dimen_8</item>
+        <item name="android:textColor">@color/customColor</item>
+        <item name="android:textSize">@dimen/dimen_text_size</item>
+    </style>
+
+    <style name="MyTextViewStyle.Heading" parent="MyTextViewStyle">
+        <item name="android:textSize">@dimen/dimen_heading_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="MyTextViewStyle.Description" parent="MyTextViewStyle">
+        <item name="android:drawablePadding">@dimen/dimen_16</item>
+        <item name="android:autoLink">all</item>
+        <item name="android:textColorLink">@color/customColor</item>
+    </style>
+
+    <style name="MyTextViewStyle.Description1" parent="MyTextViewStyle">
+        <item name="android:textSize">@dimen/dimen_text_size_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+
+</resources>
