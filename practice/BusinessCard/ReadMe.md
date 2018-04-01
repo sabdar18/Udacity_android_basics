@@ -4,3 +4,5 @@ This project Design and resources are same as **[Hello Android](https://github.c
 
 
 This is apart of the Exercise   **(COMPETITION ON LESSON05 FIRST PROJECT)**
+
+
