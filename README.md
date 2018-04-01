@@ -1,4 +1,4 @@
-# Udacity Android Basics
+# Udacity_android_basics
 Udacity Google Challenge Scholarship android basics exercise and practice apps
 
 
@@ -24,5 +24,5 @@ S.No. | Application Name
 6 | [Women's Day Application](https://github.com/sabdar18/Udacity_android_basics/tree/master/practice/MyApplication)
 7 | [Copy Challenge (WhatsApp Clone Screen ](https://github.com/sabdar18/Udacity_android_basics/tree/master/practice/copychallenge)
 8 | [Landing Page ](https://github.com/sabdar18/Udacity_android_basics/tree/master/practice/Landing_Page)
-9 | [Clean Code Quiz](https://github.com/sabdar18/Udacity_android_basics/tree/master/practice/CleanCodeQuiz)
+9 | [Business Card](https://github.com/sabdar18/Udacity_android_basics/tree/master/practice/BusinessCard)
   
