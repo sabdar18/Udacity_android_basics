@@ -1,4 +1,4 @@
-# Udacity_android_basics
+# Udacity Android Basics
 Udacity Google Challenge Scholarship android basics exercise and practice apps
 
 

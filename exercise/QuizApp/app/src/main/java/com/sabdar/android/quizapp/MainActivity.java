@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
 
-        if (answerThreeCheckBoxOne.isChecked() && answerThreeCheckBoxTwo.isChecked()) {
+       if (answerThreeCheckBoxOne.isChecked() && answerThreeCheckBoxTwo.isChecked()&& !(answerThreeCheckBoxThree.isChecked())&&(!answerThreeCheckBoxFour.isChecked())) {
             score += 1;
         }
 
